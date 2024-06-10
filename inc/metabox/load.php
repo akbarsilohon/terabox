@@ -54,7 +54,7 @@ function tera_output_metabox($post) {
             <label for="tera_app-icon">App Icon:</label>
             <div class="tera_two-colm">
                 <input type="url" name="appIcon" id="tera_app-icon" value="<?php echo esc_url($appIcon); ?>">
-                <button id="tera_app-icon-change" type="button">Change</button>
+                <button id="tera_app-icon-change" class="button button-primary button-large" type="button">Change</button>
             </div>
         </div>
 

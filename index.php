@@ -79,7 +79,6 @@ if( $indexQuery->have_posts()){ ?>
                             $download = $meta['appDownload'][0]; ?>
                         <div class="meta-block">
                             <span class="rating-star">Rating: <span class="star-value"><?php echo $rating; ?></span></span>
-                            <span class="span-download">Download: <span class="download-value"><?php echo $download; ?></span></span>
                         </div>
                     </div>
                 </article>
