@@ -79,7 +79,8 @@ a{
     object-fit: cover;
     border-radius: 20px;
 }
-.teraHero-body{
+.teraHero-body,
+.head_absolute{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -92,7 +93,8 @@ a{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-.teraHero-icon{
+.teraHero-icon,
+.single_icon{
     width: 90px;
     height: 90px;
     object-position: center;
@@ -151,6 +153,123 @@ a{
 
 
 
+/* Single Posts */
+.single-post,
+.head_post,
+.head_top{
+    display: block;
+    position: relative;
+}
+.head_top{
+    margin-bottom: 1rem;
+}
+.full_img{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.head_absolute{
+    align-items: center;
+}
+.single_title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+.app_info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:  1rem;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.data_star,
+.data_download{
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.toppers{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    line-height: 1;
+}
+.infos{
+    font-size: 14px;
+    color: #666;
+}
+a.appLink{
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: #01875f;
+    color: #fff;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.body_post{
+    display: block;
+}
+.section_title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+}
+.content_inner p,
+.data_safety{
+    color: #444;
+    line-height: 2;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+.body_post{
+    margin-bottom: 2rem;
+}
+.appUpdate{
+    margin-bottom: 1.5rem;
+}
+.updateOn{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.appDate{
+    color: #444;
+    font-size: 14px;
+}
+.safety_box{
+    display: block;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.box_data{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.box_data:last-child {
+    margin-bottom: 0;
+}
+
+
+
 /* Footer */
 
 
@@ -171,13 +290,5 @@ a{
 /* Mobile====================================================
 ============================================================= */
 @media(max-width:580px){
-    .teraHero-img{
-        height: 200px;
-    }
-    .teraHero-body{
-        padding: 20px;
-    }
-    .grid-2{
-        display: block;
-    }
+    
 }
