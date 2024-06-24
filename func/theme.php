@@ -21,6 +21,8 @@ function terabox_after_setup_theme(){
 
     add_theme_support( 'automatic-feed-links' );
     add_theme_support( 'responsive-embeds' );
+
+    register_nav_menu( 'header', 'Menu Header list' );
 }
 
 

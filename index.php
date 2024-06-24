@@ -51,6 +51,21 @@ if( $indexQuery->have_posts()){ ?>
         }
         ?>
 
+            <?php
+            /**
+             * Render Home Ads if Exist
+             * 
+             * @package terabox
+             */
+
+            $homeAds = get_option('tera_options')['home_ad'];
+
+            if( !empty( $homeAds )){
+                echo '<div class="boxHomeAd">'. $homeAds .'</div>';
+            }
+            
+            ?>
+
         <div class="grid-2">
             <?php 
             $i = 0;
@@ -58,7 +73,7 @@ if( $indexQuery->have_posts()){ ?>
                 $indexQuery->the_post();
                 $i ++; ?>
 
-                <article id="post-" class="grid-90-auto">
+                <article id="post-<?php the_ID(); ?>" class="grid-90-auto">
                     <a href="<?php the_permalink(); ?>" title="<?php echo the_title(); ?>" class="grid-a">
                         <?php echo tera_generate_app_icon( get_the_ID(), 'grid-img', 'lazy' ); ?>
                     </a>

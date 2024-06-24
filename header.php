@@ -17,6 +17,17 @@
 
     <?php
     /**
+     * Insert HTML Code
+     * 
+     * @package terabox
+     */
+    $htmlCode = get_option('tera_options')['headHTML'];
+    if( !empty( $htmlCode )){
+        echo $htmlCode;
+    }
+
+
+    /**
      * call wp_head();
      * 
      * @package terabox
@@ -29,7 +40,7 @@
             <a href="<?php echo home_url('/'); ?>" rel="home" title="<?php echo bloginfo( 'name' ); ?>" class="brand_url">
                 <?php
                     $default = TERA_URI . '/asset/image/logo-blog.png';
-                    $logo = !empty(get_option('fast_main')['logo']) ? get_option('fast_main')['logo'] : $default;
+                    $logo = !empty( get_option('tera_options')['te_logo']) ? get_option('tera_options')['te_logo'] : $default;
                     echo '<img width="300" height="60" src="'. esc_url( $logo ) .'" alt="'. get_bloginfo( 'name' ).'"/>';
                     echo '<h1 class="'. get_bloginfo('name') .'" style="display:none;">'. get_bloginfo('name') .'</h1>';
                 ?>

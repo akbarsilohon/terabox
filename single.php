@@ -74,6 +74,22 @@ $averageRating = $total != 0 ? ($appStar5 * 5 + $appStar4 * 4 + $appStar3 * 3 + 
                 </span>
             </div>
 
+            <?php 
+            /**
+             * Render Ads Before Content
+             * 
+             * @package terabox
+             */
+            
+            $adBeforeCOntent = get_option('tera_options')['beforeContent_ad'];
+
+            if( !empty( $adBeforeCOntent )){
+                echo '<div class="boxHomeAd">'. $adBeforeCOntent .'</div>';
+            }
+
+
+            ?>
+
             <a href="<?php echo $appLink; ?>" title="download <?php echo the_title(); ?>" class="appLink">Download</a>
         </section>
 
@@ -140,6 +156,15 @@ $averageRating = $total != 0 ? ($appStar5 * 5 + $appStar4 * 4 + $appStar3 * 3 + 
                 <span class="arrow">&#8594;</span>
             </div>
 
+            <?php 
+            $adBeforeCOntent = get_option('tera_options')['beforeContent_ad'];
+
+            if( !empty( $adBeforeCOntent )){
+                echo '<div class="boxHomeAd">'. $adBeforeCOntent .'</div>';
+            }
+            
+            ?>
+
             <div class="content_inner">
                 <?php the_content(); ?>
             </div>
@@ -184,6 +209,16 @@ $averageRating = $total != 0 ? ($appStar5 * 5 + $appStar4 * 4 + $appStar3 * 3 + 
                 <span>Data Safety</span>
                 <span class="arrow">&#8594;</span>
             </div>
+
+            <?php 
+            $adBeforeCOntent = get_option('tera_options')['beforeContent_ad'];
+
+            if( !empty( $adBeforeCOntent )){
+                echo '<div class="boxHomeAd">'. $adBeforeCOntent .'</div>';
+            }
+            
+            ?>
+
             <p><?php echo esc_attr( $safetyDesc ); ?></p>
 
             <div class="safety_box">

@@ -52,3 +52,19 @@ require_once TERA_DIR . '/func/unregister.php';
  * @package terabox
  */
 require_once TERA_DIR . '/inc/metabox/load.php';
+
+
+/**
+ * Admin menu
+ * 
+ * @package terabox
+ */
+require_once TERA_DIR . '/inc/admin/index.php';
+
+
+/**
+ * Shortcode
+ * 
+ * @package terabox
+ */
+require_once TERA_DIR . '/func/sc.php';

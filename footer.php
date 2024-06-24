@@ -16,6 +16,18 @@
 
 
 <?php
+/**
+ * Insert HTML Footer
+ * 
+ * @package terabox
+ */
+$fooHTML = get_option( 'tera_options' )['fooHTML'];
+if(!empty( $fooHTML )){
+    echo $fooHTML;
+}
+
+
+
 wp_footer(); ?>
 
 </body>
