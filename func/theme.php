@@ -102,3 +102,23 @@ function tera_generate_app_icon( $id, $class, $loading ){
 
     return $teraIconApp;
 }
+
+
+/**
+ * Generate rating apps
+ * 
+ * @package terabox
+ */
+function tera_gen_ratings( $id ){
+    $meta = get_post_meta( $id );
+    $appStar5 = isset($meta['appStar5'][0]) ? $meta['appStar5'][0] : '';
+    $appStar4 = isset($meta['appStar4'][0]) ? $meta['appStar4'][0] : '';
+    $appStar3 = isset($meta['appStar3'][0]) ? $meta['appStar3'][0] : '';
+    $appStar2 = isset($meta['appStar2'][0]) ? $meta['appStar2'][0] : '';
+    $appStar1 = isset($meta['appStar1'][0]) ? $meta['appStar1'][0] : '';
+    $total = $appStar5 + $appStar4 + $appStar3 + $appStar2 + $appStar1;
+
+    $averageRating = $total != 0 ? ($appStar5 * 5 + $appStar4 * 4 + $appStar3 * 3 + $appStar2 * 2 + $appStar1 * 1) / $total : 0;
+
+    return number_format( $averageRating, 1 );
+}

@@ -24,11 +24,10 @@ a{
     text-decoration: none;
 }
 
-/* Header CSS */
-.t_header{
+.fast_header{
     width: 100%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px 0 9px 0;
+    padding: 20px 0 7px 0;
     background-color: #fff;
 }
 .header_inner{
@@ -42,20 +41,119 @@ a{
     gap: 1rem;
     flex-wrap: wrap;
 }
-.t_brand-a{
+.brand_url img{
+    height: 40px;
+    width: auto;
+}
+#btnOpen{
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+#btnOpen:hover svg *{
+    stroke: #0b0b5d;
+}
+#flexbox{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    z-index: 9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 2rem;
+    transform: translateX(100%);
+    transition: 0.3s ease-in-out;
+}
+#flexbox.active{
+    transform: translateX(0);
+}
+#btnClose{
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: 0.2s ease-in-out;
+}
+#btnClose:hover svg *{
+    fill: #0b0b5d;
+}
+.flexSearch, .formMobile{
+    width: 100%;
+}
+.formMobile{
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+    margin-bottom: 2rem;
 }
-.t_brand-img{
-    width: auto;
-    height: 35px;
+.formMobile .searchInput{
+    width: 100%;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
-.t_brand-title{
+.formMobile .btnsearchMobile{
+    padding: 5px 10px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.flexMenu{
+    list-style: none;
+}
+.flexMenu li{
+    margin: 10px 0;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    width: max-content;
+    transition: all .5s;
+}
+.flexMenu li .menu-link.active{
+    color: #0b0b5d;
+}
+.flexMenu li a{
     color: #000;
-    font-size: 25px;
-    font-weight: 900;
-    letter-spacing: 1px;
+    text-decoration: none;
+}
+.flexMenu li a:hover {
+    color: #0b0b5d;
+    transition: all .5s;
+}
+.flexMenu .menu-item-has-children .menu-link.active {
+    color: #0b0b5d;
+}
+.sub-menu {
+    margin-top: 1rem;
+    list-style: none;
+}
+.flexMenu .sub-menu li::before {
+    content: '\21E2 ';
+    margin-right: 5px;
+    color: #0b0b5d;
+}
+
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 
@@ -234,7 +332,8 @@ a.appLink{
     margin-bottom: 25px;
     font-size: 16px;
 }
-.body_post{
+.body_post,
+.da_star{
     margin-bottom: 2rem;
 }
 .appUpdate{
@@ -267,11 +366,90 @@ a.appLink{
 .box_data:last-child {
     margin-bottom: 0;
 }
+.tera_tags{
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tagLink{
+    color: #444;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-weight: 500;
+}
+.dataStartReview{
+    display: grid;
+    grid-template-columns: 110px auto;
+    gap: 1rem;
+}
+.bigRating{
+    text-align: center;
+}
+.bigRating .starNumber{
+    display: block;
+    font-size: 60px;
+    font-weight: 600;
+    color: #222;
+}
+.starRevs{
+    font-size: 13px;
+    color: #444;
+}
+.blogSistem{
+    list-style: none;
+    display: block;
+    font-size: 14px;
+}
+.sistemBggray{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 5px;
+}
+.inner_percent{
+    position: relative;
+    width: 100%;
+}
+.innerGray{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #e8eaed;
+    border-radius: 10px;
+}
+.bgPersentase{
+    position: absolute;
+    height: 10px;
+    top: 0;
+    left: 0;
+    background-color: #01875f;
+    z-index: 1;
+    border-radius: 10px;
+}
 
 
 
 /* Footer */
-
+.tera_footer{
+    display: block;
+    margin-top: 5rem;
+    background-color: #e8eaed;
+    padding: 20px 0;
+}
+.innter_footer{
+    text-align: center;
+}
+.innter_footer p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
 
 
 
@@ -290,5 +468,59 @@ a.appLink{
 /* Mobile====================================================
 ============================================================= */
 @media(max-width:580px){
-    
+    .brand_url img{
+        height: 30px;
+    }
+    .teraHero-img{
+        height: 250px;
+    }
+    .teraHero-body{
+        padding: 20px;
+    }
+    .teraHero-icon{
+        width: 70px;
+        height: 70px;
+    }
+    .teraHero-body{
+        grid-template-columns: 70px auto;
+    }
+    .grid-2{
+        display: block;
+    }
+    .grid-90-auto{
+        margin-bottom: 1rem;
+        grid-template-columns: 70px auto;
+        align-items: center;
+    }
+    .grid-a .grid-img{
+        width: 70px;
+        height: 70px;
+    }
+    .grid-title{
+        margin-bottom: 3px;
+    }
+    .mobile-0{
+        margin-top: 2px;
+    }
+    .full_img{
+        border-radius: 0;
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        height: 250px;
+    }
+    .head_absolute{
+        padding: 20px;
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        grid-template-columns: 70px auto;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .single_icon{
+        width: 70px;
+        height: 70px;
+    }
+    .single_title{
+        font-size: 20px;
+    }
 }

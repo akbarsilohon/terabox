@@ -28,10 +28,11 @@ function tera_output_metabox($post) {
     $meta = get_post_meta($post->ID);
 
     $appIcon = isset($meta['appIcon'][0]) ? $meta['appIcon'][0] : '';
-    $appStar = isset($meta['appStar'][0]) ? $meta['appStar'][0] : '';
     $appReviews = isset($meta['appReviews'][0]) ? $meta['appReviews'][0] : '';
     $appDownload = isset($meta['appDownload'][0]) ? $meta['appDownload'][0] : '';
     $appLink = isset($meta['appLink'][0]) ? $meta['appLink'][0] : '';
+
+    $safetyDesc = isset( $meta['safetyDesc'][0] ) ? $meta['safetyDesc'][0] : '';
 
     $appDataShare = isset($meta['appDataShare'][0]) ? $meta['appDataShare'][0] : '';
     $appDataCloud = isset($meta['appDataCloud'][0]) ? $meta['appDataCloud'][0] : '';
@@ -58,12 +59,6 @@ function tera_output_metabox($post) {
             </div>
         </div>
 
-        <!-- App Rating Star -->
-        <div class="tera_content">
-            <label for="tera_app-star">Rating Star:</label>
-            <input type="number" step="0.1" name="appStar" id="tera_app-star" value="<?php echo esc_attr($appStar); ?>">
-        </div>
-
         <!-- App Review -->
         <div class="tera_content">
             <label for="tera_app-reviews">Review Count:</label>
@@ -83,6 +78,12 @@ function tera_output_metabox($post) {
         </div>
 
         <h2 class="tera_section">Data safety</h2>
+
+        <!-- Safety Desc -->
+        <div class="tera_content">
+            <label for="app_safetyDesc"><span class="dashicons dashicons-art"></span></label>
+            <textarea name="safetyDesc" id="app_safetyDesc" rows="6"><?php echo esc_attr( $safetyDesc ); ?></textarea>
+        </div>
 
         <!-- Data Share -->
         <div class="tera_content">
@@ -196,7 +197,6 @@ function tera_save_data_meta_boxes_to_db($post_id) {
     // Sanitize and save the data
     $fields = [
         'appIcon',
-        'appStar',
         'appReviews',
         'appDownload',
         'appLink',
@@ -209,7 +209,8 @@ function tera_save_data_meta_boxes_to_db($post_id) {
         'appStar4',
         'appStar3',
         'appStar2',
-        'appStar1'
+        'appStar1',
+        'safetyDesc'
     ];
 
     foreach ($fields as $field) {

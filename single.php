@@ -17,17 +17,28 @@ $appReviews     = $meta['appReviews'][0];
 $appDownload    = isset($meta['appDownload'][0]) ? $meta['appDownload'][0] : '';
 $appLink        = isset($meta['appLink'][0]) ? $meta['appLink'][0] : '';
 
+$safetyDesc = isset( $meta['safetyDesc'][0] ) ? $meta['safetyDesc'][0] : 'Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region and age The developer provided this information and may update it over time.';
 $appDataShare   = isset($meta['appDataShare'][0]) ? $meta['appDataShare'][0] : '';
 $appDataCloud   = isset($meta['appDataCloud'][0]) ? $meta['appDataCloud'][0] : '';
 $appDataLock    = isset($meta['appDataLock'][0]) ? $meta['appDataLock'][0] : '';
 $appDataTrash   = isset($meta['appDataTrash'][0]) ? $meta['appDataTrash'][0] : '';
 $appDataShield  = isset($meta['appDataShield'][0]) ? $meta['appDataShield'][0] : '';
 
-$appStar5       = isset($meta['appStar5'][0]) ? $meta['appStar5'][0] : '';
-$appStar4       = isset($meta['appStar4'][0]) ? $meta['appStar4'][0] : '';
-$appStar3       = isset($meta['appStar3'][0]) ? $meta['appStar3'][0] : '';
-$appStar2       = isset($meta['appStar2'][0]) ? $meta['appStar2'][0] : '';
-$appStar1       = isset($meta['appStar1'][0]) ? $meta['appStar1'][0] : '';
+$appStar5 = isset($meta['appStar5'][0]) ? $meta['appStar5'][0] : 0;
+$appStar4 = isset($meta['appStar4'][0]) ? $meta['appStar4'][0] : 0;
+$appStar3 = isset($meta['appStar3'][0]) ? $meta['appStar3'][0] : 0;
+$appStar2 = isset($meta['appStar2'][0]) ? $meta['appStar2'][0] : 0;
+$appStar1 = isset($meta['appStar1'][0]) ? $meta['appStar1'][0] : 0;
+
+$total = $appStar5 + $appStar4 + $appStar3 + $appStar2 + $appStar1;
+
+$percentageAppStar5 = $total != 0 ? ($appStar5 / $total) * 100 : 0;
+$percentageAppStar4 = $total != 0 ? ($appStar4 / $total) * 100 : 0;
+$percentageAppStar3 = $total != 0 ? ($appStar3 / $total) * 100 : 0;
+$percentageAppStar2 = $total != 0 ? ($appStar2 / $total) * 100 : 0;
+$percentageAppStar1 = $total != 0 ? ($appStar1 / $total) * 100 : 0;
+
+$averageRating = $total != 0 ? ($appStar5 * 5 + $appStar4 * 4 + $appStar3 * 3 + $appStar2 * 2 + $appStar1 * 1) / $total : 0;
 
 ?>
 
@@ -45,7 +56,7 @@ $appStar1       = isset($meta['appStar1'][0]) ? $meta['appStar1'][0] : '';
             <div class="app_info">
                 <span class="data_star">
                     <span class="toppers">
-                        <?php echo $appStar . ' &#9734;'; ?>
+                        <?php echo number_format( $averageRating, 1) . ' &#9734;'; ?>
                     </span>
                     <span class="infos">
                         <?php echo $appReviews . ' reviews'; ?>
@@ -65,6 +76,64 @@ $appStar1       = isset($meta['appStar1'][0]) ? $meta['appStar1'][0] : '';
 
             <a href="<?php echo $appLink; ?>" title="download <?php echo the_title(); ?>" class="appLink">Download</a>
         </section>
+
+        <section class="da_star">
+            <div class="section_title">
+                <span>Ratings App</span>
+                <span class="arrow">&#8594;</span>
+            </div>
+
+            <div class="dataStartReview">
+                <span class="bigRating">
+                    <span class="starNumber">
+                        <?php echo number_format( $averageRating, 1); ?>
+                    </span>
+                    <span class="starRevs">
+                        <?php echo $appReviews; ?>
+                        reviews
+                    </span>
+                </span>
+                <ul class="blogSistem">
+                    <li class="sistemBggray">
+                        <span class="number">5</span>
+                        <div class="inner_percent">
+                            <span class="innerGray"></span>
+                            <span class="bgPersentase" title="<?php echo $appStar5; ?>" style="width: <?php echo $percentageAppStar5; ?>%;"></span>
+                        </div>
+                    </li>
+                    <li class="sistemBggray">
+                        <span class="number">4</span>
+                        <div class="inner_percent">
+                            <span class="innerGray"></span>
+                            <span class="bgPersentase" title="<?php echo $appStar4; ?>" style="width: <?php echo $percentageAppStar4; ?>%;"></span>
+                        </div>
+                    </li>
+                    <li class="sistemBggray">
+                        <span class="number">3</span>
+                        <div class="inner_percent">
+                            <span class="innerGray"></span>
+                            <span class="bgPersentase" title="<?php echo $appStar3; ?>" style="width: <?php echo $percentageAppStar3; ?>%;"></span>
+                        </div>
+                    </li>
+                    <li class="sistemBggray">
+                        <span class="number">2</span>
+                        <div class="inner_percent">
+                            <span class="innerGray"></span>
+                            <span class="bgPersentase" title="<?php echo $appStar2; ?>" style="width: <?php echo $percentageAppStar2; ?>%;"></span>
+                        </div>
+                    </li>
+                    <li class="sistemBggray">
+                        <span class="number">1</span>
+                        <div class="inner_percent">
+                            <span class="innerGray"></span>
+                            <span class="bgPersentase" title="<?php echo $appStar1; ?>" style="width: <?php echo $percentageAppStar1; ?>%;"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
         <section class="body_post">
             <div class="section_title">
                 <span>About This App</span>
@@ -81,6 +150,32 @@ $appStar1       = isset($meta['appStar1'][0]) ? $meta['appStar1'][0] : '';
                 <span class="appDate"><?php echo the_time('F, D, Y'); ?></span>
             </div>
 
+            <?php
+
+                /**
+                 * Render Tags
+                 * 
+                 * @package terabox
+                 */
+                $tags = get_the_tags();
+                if( !empty( $tags )){ ?>
+
+                    <div class="tera_tags">
+                        <?php foreach( $tags as $tag ){ ?>
+
+                            <a href="<?php echo esc_url( get_tag_link($tag->term_id)); ?>" class="tagLink" title="<?php echo esc_attr( $tag->name ); ?>">
+                                <?php echo esc_attr( $tag->name ); ?>
+                            </a>
+
+                            <?php
+                        } ?>
+                    </div>
+
+                    <?php
+                }
+
+            ?>
+
 
         </section>
 
@@ -89,7 +184,7 @@ $appStar1       = isset($meta['appStar1'][0]) ? $meta['appStar1'][0] : '';
                 <span>Data Safety</span>
                 <span class="arrow">&#8594;</span>
             </div>
-            <p>Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region and age The developer provided this information and may update it over time.</p>
+            <p><?php echo esc_attr( $safetyDesc ); ?></p>
 
             <div class="safety_box">
                 <?php if(!empty ($appDataShare)){ ?>
@@ -141,13 +236,6 @@ $appStar1       = isset($meta['appStar1'][0]) ? $meta['appStar1'][0] : '';
                     </div>
                     <?php
                 } ?>
-            </div>
-        </section>
-
-        <section class="da_star">
-            <div class="section_title">
-                <span>Ratings App</span>
-                <span class="arrow">&#8594;</span>
             </div>
         </section>
     </article>

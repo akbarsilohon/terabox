@@ -40,14 +40,7 @@ if( $indexQuery->have_posts()){ ?>
                         <?php echo tera_generate_app_icon( get_the_ID(), 'teraHero-icon', 'lazy' ); ?>
                         <div class="teraHero-block">
                             <?php the_title('<h2 class="teraHero-title">', '</h2>'); ?>
-                            <?php 
-                            $meta = get_post_meta( get_the_ID() );
-                            $rating = $meta['appStar'][0];
-    
-                            if( !empty( $rating )){
-                                echo '<span class="rating">Rating ' . $rating . '</span>';
-                            }
-                            ?>
+                            <span class="rating"><?php echo tera_gen_ratings( get_the_ID() ); ?> &starf;</span>
                         </div>
                     </div>
                 </a>
@@ -73,12 +66,8 @@ if( $indexQuery->have_posts()){ ?>
                         <a href="<?php the_permalink(); ?>" title="<?php echo the_title(); ?>" class="grid-body-a">
                             <?php the_title('<h2 class="grid-title">', '</h2>'); ?>
                         </a>
-                        <?php 
-                            $meta = get_post_meta( get_the_ID() );
-                            $rating = $meta['appStar'][0];
-                            $download = $meta['appDownload'][0]; ?>
                         <div class="meta-block">
-                            <span class="rating-star">Rating: <span class="star-value"><?php echo $rating; ?></span></span>
+                            <span class="rating-star"><span class="star-value"><?php echo tera_gen_ratings( get_the_ID() ); ?> &starf;</span></span>
                         </div>
                     </div>
                 </article>
