@@ -69,6 +69,20 @@ function tera_admin_settings_init_options(){
         <?php
     }, 'tera', 'tera-main' );
 
+    /**
+     * Related Posts Count
+     * 
+     * @package terabox
+     */
+    add_settings_field( 'tera-re-count', 'Related Post Count', function(){
+        $tOptions = get_option( 'tera_options' );
+        $reCount = !empty( $tOptions['reCount']) ? $tOptions['reCount'] : 6; ?>
+
+        <input type="number" name="tera_options[reCount]" id="reCount" value="<?php echo $reCount; ?>">
+
+        <?php
+    }, 'tera', 'tera-main' );
+
 
     /**
      * Ads Setting

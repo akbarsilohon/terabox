@@ -50,7 +50,7 @@ a{
     transition: 0.2s ease-in-out;
 }
 #btnOpen:hover svg *{
-    stroke: #0b0b5d;
+    stroke: #01875f;
 }
 #flexbox{
     position: fixed;
@@ -78,7 +78,7 @@ a{
     transition: 0.2s ease-in-out;
 }
 #btnClose:hover svg *{
-    fill: #0b0b5d;
+    fill: #01875f;
 }
 .flexSearch, .formMobile{
     width: 100%;
@@ -118,18 +118,18 @@ a{
     transition: all .5s;
 }
 .flexMenu li .menu-link.active{
-    color: #0b0b5d;
+    color: #01875f;
 }
 .flexMenu li a{
     color: #000;
     text-decoration: none;
 }
 .flexMenu li a:hover {
-    color: #0b0b5d;
+    color: #01875f;
     transition: all .5s;
 }
 .flexMenu .menu-item-has-children .menu-link.active {
-    color: #0b0b5d;
+    color: #01875f;
 }
 .sub-menu {
     margin-top: 1rem;
@@ -138,7 +138,7 @@ a{
 .flexMenu .sub-menu li::before {
     content: '\21E2 ';
     margin-right: 5px;
-    color: #0b0b5d;
+    color: #01875f;
 }
 
 /* Search page */
@@ -159,7 +159,7 @@ a{
 }
 .searchFormBox input[type="submit"]{
     border: none;
-    background-color: #0b0b5d;
+    background-color: #01875f;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -186,7 +186,6 @@ Ads Style
 */
 .boxHomeAd{
     margin-bottom: 1.3rem;
-    background-color: #444;
 }
 
 /* Style Index & archive */
@@ -254,7 +253,7 @@ Ads Style
 .in_single_tag a {
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: #0b0b5d;
+    background-color: #01875f;
     color: white;
     width: max-content;
     font-weight: 600;
@@ -267,7 +266,7 @@ Ads Style
     bottom: 0;
     width: 100%;
     height: 3px;
-    background-color: #0b0b5d;
+    background-color: #01875f;
     z-index: -1;
 }
 .grid-2{
@@ -306,6 +305,23 @@ Ads Style
 .rating-star{
     display: block;
     margin-bottom: 3px;
+}
+
+/* Paginations */
+.fastPagination{
+    margin-top: 3rem;
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+.fastPagination .page-numbers{
+    color: #fff;
+    background-color: #01875f;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.fastPagination .page-numbers.current{
+    background-color: #222;
 }
 
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * Render archive posts views
+ * Render Related Posts
  * 
  * Silohon Terabox Wordpress Theme
  * 
@@ -9,18 +9,26 @@
  * @link https://github.com/akbarsilohon/terabox.git
  */
 
-get_header();
+$option_array = get_option( 'tera_options' );
+$fixReCount = !empty( $option_array['reCount']) ? $option_array['reCount'] : 6;
 
-if( have_posts()){ ?>
+$reApps = get_posts(
+    array(
+        'category__in'          =>  wp_get_post_categories( $post->ID ),
+        'numberposts'           =>  $fixReCount,
+        'post__not_in'          =>  array($post->ID),
+    )
+);
 
-<div class="container teraPosts">
-    <div class="section_cat">
-        <h1 class="in_single_tag">Latest Apps</h1>
-    </div>
-    
-    <div class="grid-2">
-        <?php while( have_posts()){
-            the_post(); ?>
+if( $reApps ){ ?>
+
+<div class="section_cat">
+    <span class="in_single_tag">Related Apps</span>
+</div>
+
+<div class="grid-2">
+    <?php foreach( $reApps as $post ){
+        setup_postdata( $post ); ?>
 
             <article id="post-<?php the_ID(); ?>" class="grid-90-auto">
                 <a href="<?php the_permalink(); ?>" title="<?php echo the_title(); ?>" class="grid-a">
@@ -36,24 +44,11 @@ if( have_posts()){ ?>
                 </div>
             </article>
 
-            <?php
-        } ?>
-    </div>
-
-    <div class="fastPagination">
-        <?php 
-            echo paginate_links(
-                array(
-                    'mid_size'      =>  2,
-                    'show_all'      =>  false,
-                    'prev_next'     =>  true
-                )
-            );
-        ?>
-    </div>
+        <?php
+    } ?>
 </div>
 
 <?php
 }
 
-get_footer();
+wp_reset_postdata();

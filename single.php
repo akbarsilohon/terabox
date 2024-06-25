@@ -274,6 +274,17 @@ $averageRating = $total != 0 ? ($appStar5 * 5 + $appStar4 * 4 + $appStar3 * 3 + 
             </div>
         </section>
     </article>
+
+    <?php 
+    
+    /**
+     * Call Related Apps
+     * 
+     * @package terabox
+     */
+    TERA_PART( 'inc/aside/related' );
+
+    ?>
 </div>
 
 <?php

@@ -39,6 +39,18 @@ if( have_posts()){ ?>
             <?php
         } ?>
     </div>
+
+    <div class="fastPagination">
+        <?php 
+            echo paginate_links(
+                array(
+                    'mid_size'      =>  2,
+                    'show_all'      =>  false,
+                    'prev_next'     =>  true
+                )
+            );
+        ?>
+    </div>
 </div>
 
 <?php
