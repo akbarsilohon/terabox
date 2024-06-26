@@ -55,3 +55,18 @@ function tera_ad_function(){
         return $outputAds;
     }
 }
+
+/**
+ * Render Shortcode fot button donwload
+ * 
+ * @package terabox
+ */
+add_shortcode( 'tera-btn', 'tera_btn_function_sc' );
+function tera_btn_function_sc( $atts ){
+    $btnUrl = !empty( $atts['url'] ) ? $atts['url'] : '#';
+    $btnText = !empty( $atts['text'] ) ? $atts['text'] : 'Download';
+
+    $butttonOutput = '<a href="'. $btnUrl .'" class="btnInner" title="Download App">'. $btnText .'</a>';
+
+    return $butttonOutput;
+}

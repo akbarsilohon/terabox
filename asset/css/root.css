@@ -388,6 +388,16 @@ a.appLink{
     border-radius: 10px;
     margin-bottom: 2rem;
 }
+a.btnInner{
+    color: #fff !important;
+    background-color: #01875f;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
 .body_post{
     display: block;
 }
@@ -406,6 +416,35 @@ a.appLink{
     line-height: 2;
     margin-bottom: 25px;
     font-size: 16px;
+}
+.content_inner h2,
+.content_inner h3,
+.content_inner h4,
+.content_inner h5,
+.content_inner h6{
+	margin-bottom: 20px;
+}
+.content_inner ul,
+.content_inner ol{
+	margin-left: 25px;
+	margin-bottom: 2rem;
+}
+.content_inner > * a{
+	color: #01875f;
+}
+.content_inner ul li,
+.content_inner ol li{
+	color: #444;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.content_inner p a img,
+.content_inner p img{
+    width: 100%;
+    height: auto;
+    margin-bottom: -20px;
+    border-radius: 20px;
 }
 .body_post,
 .da_star{

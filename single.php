@@ -12,7 +12,6 @@
 get_header();
 
 $meta           = get_post_meta( get_the_ID() );
-$appStar        = $meta['appStar'][0];
 $appReviews     = $meta['appReviews'][0];
 $appDownload    = isset($meta['appDownload'][0]) ? $meta['appDownload'][0] : '';
 $appLink        = isset($meta['appLink'][0]) ? $meta['appLink'][0] : '';
@@ -90,7 +89,9 @@ $averageRating = $total != 0 ? ($appStar5 * 5 + $appStar4 * 4 + $appStar3 * 3 + 
 
             ?>
 
-            <a href="<?php echo $appLink; ?>" title="download <?php echo the_title(); ?>" class="appLink">Download</a>
+            <?php if( !empty( $appLink )){
+                echo '<a href="' . $appLink .'" title="download '. get_the_title() . '" class="appLink">Download</a>';
+            } ?>
         </section>
 
         <section class="da_star">
