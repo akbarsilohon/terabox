@@ -43,6 +43,7 @@ function TERA_PART( $teraFile ){
 require_once TERA_DIR . '/func/theme.php';
 require_once TERA_DIR . '/func/scripts.php';
 require_once TERA_DIR . '/func/unregister.php';
+require_once TERA_DIR . '/func/tera-render-ads.php';
 
 
 

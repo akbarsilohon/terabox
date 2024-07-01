@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<countries>
+  <country name="Afghanistan" alpha-2="AF"/>
+  <country name="Åland Islands" alpha-2="AX" />
+  <country name="Albania" alpha-2="AL" />
+  <country name="Algeria" alpha-2="DZ" />
+  <country name="American Samoa" alpha-2="AS" />
+  <country name="Andorra" alpha-2="AD" />
+  <country name="Angola" alpha-2="AO" />
+  <country name="Anguilla" alpha-2="AI" />
+  <country name="Antarctica" alpha-2="AQ" />
+  <country name="Antigua and Barbuda" alpha-2="AG" />
+  <country name="Argentina" alpha-2="AR" />
+  <country name="Armenia" alpha-2="AM" />
+  <country name="Aruba" alpha-2="AW" />
+  <country name="Australia" alpha-2="AU" />
+  <country name="Austria" alpha-2="AT" />
+  <country name="Azerbaijan" alpha-2="AZ" />
+  <country name="Bahamas" alpha-2="BS" />
+  <country name="Bahrain" alpha-2="BH" />
+  <country name="Bangladesh" alpha-2="BD" />
+  <country name="Barbados" alpha-2="BB" />
+  <country name="Belarus" alpha-2="BY" />
+  <country name="Belgium" alpha-2="BE" />
+  <country name="Belize" alpha-2="BZ" />
+  <country name="Benin" alpha-2="BJ" />
+  <country name="Bermuda" alpha-2="BM" />
+  <country name="Bhutan" alpha-2="BT" />
+  <country name="Bolivia, Plurinational State of" alpha-2="BO" />
+  <country name="Bonaire, Sint Eustatius and Saba" alpha-2="BQ" />
+  <country name="Bosnia and Herzegovina" alpha-2="BA" />
+  <country name="Botswana" alpha-2="BW" />
+  <country name="Bouvet Island" alpha-2="BV" />
+  <country name="Brazil" alpha-2="BR" />
+  <country name="British Indian Ocean Territory" alpha-2="IO" />
+  <country name="Brunei Darussalam" alpha-2="BN" />
+  <country name="Bulgaria" alpha-2="BG" />
+  <country name="Burkina Faso" alpha-2="BF" />
+  <country name="Burundi" alpha-2="BI" />
+  <country name="Cabo Verde" alpha-2="CV" />
+  <country name="Cambodia" alpha-2="KH" />
+  <country name="Cameroon" alpha-2="CM" />
+  <country name="Canada" alpha-2="CA" />
+  <country name="Cayman Islands" alpha-2="KY" />
+  <country name="Central African Republic" alpha-2="CF" />
+  <country name="Chad" alpha-2="TD" />
+  <country name="Chile" alpha-2="CL" />
+  <country name="China" alpha-2="CN" />
+  <country name="Christmas Island" alpha-2="CX" />
+  <country name="Cocos (Keeling) Islands" alpha-2="CC" />
+  <country name="Colombia" alpha-2="CO" />
+  <country name="Comoros" alpha-2="KM" />
+  <country name="Congo" alpha-2="CG" />
+  <country name="Congo, Democratic Republic of the" alpha-2="CD" />
+  <country name="Cook Islands" alpha-2="CK" />
+  <country name="Costa Rica" alpha-2="CR" />
+  <country name="Côte d'Ivoire" alpha-2="CI" />
+  <country name="Croatia" alpha-2="HR" />
+  <country name="Cuba" alpha-2="CU" />
+  <country name="Curaçao" alpha-2="CW" />
+  <country name="Cyprus" alpha-2="CY" />
+  <country name="Czechia" alpha-2="CZ" />
+  <country name="Denmark" alpha-2="DK" />
+  <country name="Djibouti" alpha-2="DJ" />
+  <country name="Dominica" alpha-2="DM" />
+  <country name="Dominican Republic" alpha-2="DO" />
+  <country name="Ecuador" alpha-2="EC" />
+  <country name="Egypt" alpha-2="EG" />
+  <country name="El Salvador" alpha-2="SV" />
+  <country name="Equatorial Guinea" alpha-2="GQ" />
+  <country name="Eritrea" alpha-2="ER" />
+  <country name="Estonia" alpha-2="EE" />
+  <country name="Eswatini" alpha-2="SZ" />
+  <country name="Ethiopia" alpha-2="ET" />
+  <country name="Falkland Islands (Malvinas)" alpha-2="FK" />
+  <country name="Faroe Islands" alpha-2="FO" />
+  <country name="Fiji" alpha-2="FJ" />
+  <country name="Finland" alpha-2="FI" />
+  <country name="France" alpha-2="FR" />
+  <country name="French Guiana" alpha-2="GF" />
+  <country name="French Polynesia" alpha-2="PF" />
+  <country name="French Southern Territories" alpha-2="TF" />
+  <country name="Gabon" alpha-2="GA" />
+  <country name="Gambia" alpha-2="GM" />
+  <country name="Georgia" alpha-2="GE" />
+  <country name="Germany" alpha-2="DE" />
+  <country name="Ghana" alpha-2="GH" />
+  <country name="Gibraltar" alpha-2="GI" />
+  <country name="Greece" alpha-2="GR" />
+  <country name="Greenland" alpha-2="GL" />
+  <country name="Grenada" alpha-2="GD" />
+  <country name="Guadeloupe" alpha-2="GP" />
+  <country name="Guam" alpha-2="GU" />
+  <country name="Guatemala" alpha-2="GT" />
+  <country name="Guernsey" alpha-2="GG" />
+  <country name="Guinea" alpha-2="GN" />
+  <country name="Guinea-Bissau" alpha-2="GW" />
+  <country name="Guyana" alpha-2="GY" />
+  <country name="Haiti" alpha-2="HT" />
+  <country name="Heard Island and McDonald Islands" alpha-2="HM" />
+  <country name="Holy See" alpha-2="VA" />
+  <country name="Honduras" alpha-2="HN" />
+  <country name="Hong Kong" alpha-2="HK" />
+  <country name="Hungary" alpha-2="HU" />
+  <country name="Iceland" alpha-2="IS" />
+  <country name="India" alpha-2="IN" />
+  <country name="Indonesia" alpha-2="ID" />
+  <country name="Iran, Islamic Republic of" alpha-2="IR" />
+  <country name="Iraq" alpha-2="IQ" />
+  <country name="Ireland" alpha-2="IE" />
+  <country name="Isle of Man" alpha-2="IM" />
+  <country name="Israel" alpha-2="IL" />
+  <country name="Italy" alpha-2="IT" />
+  <country name="Jamaica" alpha-2="JM" />
+  <country name="Japan" alpha-2="JP" />
+  <country name="Jersey" alpha-2="JE" />
+  <country name="Jordan" alpha-2="JO" />
+  <country name="Kazakhstan" alpha-2="KZ" />
+  <country name="Kenya" alpha-2="KE" />
+  <country name="Kiribati" alpha-2="KI" />
+  <country name="Korea, Democratic People's Republic of" alpha-2="KP" />
+  <country name="Korea, Republic of" alpha-2="KR" />
+  <country name="Kuwait" alpha-2="KW" />
+  <country name="Kyrgyzstan" alpha-2="KG" />
+  <country name="Lao People's Democratic Republic" alpha-2="LA" />
+  <country name="Latvia" alpha-2="LV" />
+  <country name="Lebanon" alpha-2="LB" />
+  <country name="Lesotho" alpha-2="LS" />
+  <country name="Liberia" alpha-2="LR" />
+  <country name="Libya" alpha-2="LY" />
+  <country name="Liechtenstein" alpha-2="LI" />
+  <country name="Lithuania" alpha-2="LT" />
+  <country name="Luxembourg" alpha-2="LU" />
+  <country name="Macao" alpha-2="MO" />
+  <country name="Madagascar" alpha-2="MG" />
+  <country name="Malawi" alpha-2="MW" />
+  <country name="Malaysia" alpha-2="MY" />
+  <country name="Maldives" alpha-2="MV" />
+  <country name="Mali" alpha-2="ML" />
+  <country name="Malta" alpha-2="MT" />
+  <country name="Marshall Islands" alpha-2="MH" />
+  <country name="Martinique" alpha-2="MQ" />
+  <country name="Mauritania" alpha-2="MR" />
+  <country name="Mauritius" alpha-2="MU" />
+  <country name="Mayotte" alpha-2="YT" />
+  <country name="Mexico" alpha-2="MX" />
+  <country name="Micronesia, Federated States of" alpha-2="FM" />
+  <country name="Moldova, Republic of" alpha-2="MD" />
+  <country name="Monaco" alpha-2="MC" />
+  <country name="Mongolia" alpha-2="MN" />
+  <country name="Montenegro" alpha-2="ME" />
+  <country name="Montserrat" alpha-2="MS" />
+  <country name="Morocco" alpha-2="MA" />
+  <country name="Mozambique" alpha-2="MZ" />
+  <country name="Myanmar" alpha-2="MM" />
+  <country name="Namibia" alpha-2="NA" />
+  <country name="Nauru" alpha-2="NR" />
+  <country name="Nepal" alpha-2="NP" />
+  <country name="Netherlands, Kingdom of the" alpha-2="NL" />
+  <country name="New Caledonia" alpha-2="NC" />
+  <country name="New Zealand" alpha-2="NZ" />
+  <country name="Nicaragua" alpha-2="NI" />
+  <country name="Niger" alpha-2="NE" />
+  <country name="Nigeria" alpha-2="NG" />
+  <country name="Niue" alpha-2="NU" />
+  <country name="Norfolk Island" alpha-2="NF" />
+  <country name="North Macedonia" alpha-2="MK" />
+  <country name="Northern Mariana Islands" alpha-2="MP" />
+  <country name="Norway" alpha-2="NO" />
+  <country name="Oman" alpha-2="OM" />
+  <country name="Pakistan" alpha-2="PK" />
+  <country name="Palau" alpha-2="PW" />
+  <country name="Palestine, State of" alpha-2="PS" />
+  <country name="Panama" alpha-2="PA" />
+  <country name="Papua New Guinea" alpha-2="PG" />
+  <country name="Paraguay" alpha-2="PY" />
+  <country name="Peru" alpha-2="PE" />
+  <country name="Philippines" alpha-2="PH" />
+  <country name="Pitcairn" alpha-2="PN" />
+  <country name="Poland" alpha-2="PL" />
+  <country name="Portugal" alpha-2="PT" />
+  <country name="Puerto Rico" alpha-2="PR" />
+  <country name="Qatar" alpha-2="QA" />
+  <country name="Réunion" alpha-2="RE" />
+  <country name="Romania" alpha-2="RO" />
+  <country name="Russian Federation" alpha-2="RU" />
+  <country name="Rwanda" alpha-2="RW" />
+  <country name="Saint Barthélemy" alpha-2="BL" />
+  <country name="Saint Helena, Ascension and Tristan da Cunha" alpha-2="SH" />
+  <country name="Saint Kitts and Nevis" alpha-2="KN" />
+  <country name="Saint Lucia" alpha-2="LC" />
+  <country name="Saint Martin (French part)" alpha-2="MF" />
+  <country name="Saint Pierre and Miquelon" alpha-2="PM" />
+  <country name="Saint Vincent and the Grenadines" alpha-2="VC" />
+  <country name="Samoa" alpha-2="WS" />
+  <country name="San Marino" alpha-2="SM" />
+  <country name="Sao Tome and Principe" alpha-2="ST" />
+  <country name="Saudi Arabia" alpha-2="SA" />
+  <country name="Senegal" alpha-2="SN" />
+  <country name="Serbia" alpha-2="RS" />
+  <country name="Seychelles" alpha-2="SC" />
+  <country name="Sierra Leone" alpha-2="SL" />
+  <country name="Singapore" alpha-2="SG" />
+  <country name="Sint Maarten (Dutch part)" alpha-2="SX" />
+  <country name="Slovakia" alpha-2="SK" />
+  <country name="Slovenia" alpha-2="SI" />
+  <country name="Solomon Islands" alpha-2="SB" />
+  <country name="Somalia" alpha-2="SO" />
+  <country name="South Africa" alpha-2="ZA" />
+  <country name="South Georgia and the South Sandwich Islands" alpha-2="GS" />
+  <country name="South Sudan" alpha-2="SS" />
+  <country name="Spain" alpha-2="ES" />
+  <country name="Sri Lanka" alpha-2="LK" />
+  <country name="Sudan" alpha-2="SD" />
+  <country name="Suriname" alpha-2="SR" />
+  <country name="Svalbard and Jan Mayen" alpha-2="SJ" />
+  <country name="Sweden" alpha-2="SE" />
+  <country name="Switzerland" alpha-2="CH" />
+  <country name="Syrian Arab Republic" alpha-2="SY" />
+  <country name="Taiwan, Province of China" alpha-2="TW" />
+  <country name="Tajikistan" alpha-2="TJ" />
+  <country name="Tanzania, United Republic of" alpha-2="TZ" />
+  <country name="Thailand" alpha-2="TH" />
+  <country name="Timor-Leste" alpha-2="TL" />
+  <country name="Togo" alpha-2="TG" />
+  <country name="Tokelau" alpha-2="TK" />
+  <country name="Tonga" alpha-2="TO" />
+  <country name="Trinidad and Tobago" alpha-2="TT" />
+  <country name="Tunisia" alpha-2="TN" />
+  <country name="Türkiye" alpha-2="TR" />
+  <country name="Turkmenistan" alpha-2="TM" />
+  <country name="Turks and Caicos Islands" alpha-2="TC" />
+  <country name="Tuvalu" alpha-2="TV" />
+  <country name="Uganda" alpha-2="UG" />
+  <country name="Ukraine" alpha-2="UA" />
+  <country name="United Arab Emirates" alpha-2="AE" />
+  <country name="United Kingdom of Great Britain and Northern Ireland" alpha-2="GB" />
+  <country name="United States of America" alpha-2="US" />
+  <country name="United States Minor Outlying Islands" alpha-2="UM" />
+  <country name="Uruguay" alpha-2="UY" />
+  <country name="Uzbekistan" alpha-2="UZ" />
+  <country name="Vanuatu" alpha-2="VU" />
+  <country name="Venezuela, Bolivarian Republic of" alpha-2="VE" />
+  <country name="Viet Nam" alpha-2="VN" />
+  <country name="Virgin Islands (British)" alpha-2="VG" />
+  <country name="Virgin Islands (U.S.)" alpha-2="VI" />
+  <country name="Wallis and Futuna" alpha-2="WF" />
+  <country name="Western Sahara" alpha-2="EH" />
+  <country name="Yemen" alpha-2="YE" />
+  <country name="Zambia" alpha-2="ZM" />
+  <country name="Zimbabwe" alpha-2="ZW" />
+</countries>

@@ -41,6 +41,8 @@ $averageRating = $total != 0 ? ($appStar5 * 5 + $appStar4 * 4 + $appStar3 * 3 + 
 
 ?>
 
+<?php x_ads_loader(); ?>
+
 <div class="container teraPosts mobile-0">
     <article id="post-<?php the_ID(); ?>" class="single-post">
         <section class="head_post">
